@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web de Vuelos</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <!-- Encabezado -->
+    <header class="header">
+        <div class="logo">VuelosLatinos</div>
+        <nav class="nav">
+            <a href="#">Alojamientos</a>
+            <a href="#">Vuelos</a>
+            <a href="#">Paquetes</a>
+            <a href="#">Ofertas</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+    </header>
+
+    <!-- Barra de búsqueda destacada -->
+    <section class="search-bar">
+        <div class="search-container">
+            <h1 class="search-title">Paquetes turísticos</h1>
+            <form class="search-form">
+                <div class="form-group">
+                    <label for="origen">Origen</label>
+                    <input type="text" id="origen" placeholder="Ciudad de origen">
+                </div>
+                <div class="form-group">
+                    <label for="destino">Destino</label>
+                    <input type="text" id="destino" placeholder="Ciudad de destino">
+                </div>
+                <div class="form-group">
+                    <label for="fecha-entrada">Entrada</label>
+                    <input type="date" id="fecha-entrada">
+                </div>
+                <div class="form-group">
+                    <label for="fecha-salida">Salida</label>
+                    <input type="date" id="fecha-salida">
+                </div>
+                <div class="form-group">
+                    <label for="habitaciones">Habitaciones</label>
+                    <select id="habitaciones">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn-search">Buscar</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Resultados de búsqueda -->
+    <section class="results-section">
+        <h2>Resultados</h2>
+        <div class="results-placeholder">No hay resultados disponibles aún. Realiza una búsqueda para ver los vuelos.</div>
+    </section>
+
+
+    <!-- Pie de página -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>© 2025 VuelosLatinos. Todos los derechos reservados.</p>
+            <p>Contacto: info@vueloslatinos.com</p>
+            <div class="social-links">
+                <a href="#" class="social-link">Facebook</a>
+                <a href="#" class="social-link">Twitter</a>
+                <a href="#" class="social-link">Instagram</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
