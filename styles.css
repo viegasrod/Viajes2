@@ -224,6 +224,13 @@ h2{
 .footer .social-links a:hover {
     background-color: #0056b3;
 }
+.footer .social-links-whatsapp{
+    width: 30px;
+    height: 30px;
+    background-image: url(/img/whatsapp.png);
+    background-size: cover;
+    margin: 0;
+}
 .footer .social-links-facebook{
     width: 30px;
     height: 30px;
@@ -324,7 +331,7 @@ h2{
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    background: rgba(0, 0, 0, 0.5);
+    background: #ec931e;
     color: white;
     border: none;
     padding: 10px 15px;
@@ -344,3 +351,54 @@ h2{
     background: rgba(0, 0, 0, 0.7);
   }
   
+  /* Encabezado */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ec931e;
+    color: white;
+    padding: 10px 20px;
+}
+
+.nav {
+    display: flex;
+    flex-wrap: wrap; /* Permite que el menú se ajuste en pantallas pequeñas */
+    gap: 10px;
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 15px;
+    font-size: 1em;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.nav a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    text-decoration: none;
+}
+
+/* Responsivo para el menú */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav a {
+        width: 100%; /* En pantallas pequeñas, los enlaces ocupan todo el ancho */
+        text-align: left;
+    }
+}
+.encabezadoLogo{
+    border-radius: 30%;
+    width: 100px;
+}
