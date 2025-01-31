@@ -227,21 +227,21 @@ h2{
 .footer .social-links-whatsapp{
     width: 30px;
     height: 30px;
-    background-image: url(/img/whatsapp.png);
+    background-image: url(/img/ico/whatsapp.png);
     background-size: cover;
     margin: 0;
 }
 .footer .social-links-facebook{
     width: 30px;
     height: 30px;
-    background-image: url(/img/facebook.ico);
+    background-image: url(/img/ico/facebook.ico);
     background-size: cover;
     margin: 0;
 }
 .footer .social-links-instagram{
     width: 30px;
     height: 30px;
-    background-image: url(/img/Instagram.ico);
+    background-image: url(/img/ico/instagram.ico);
     background-size: cover;
 }
 

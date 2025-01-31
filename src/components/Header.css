@@ -17,7 +17,7 @@
     width: 50px; /* Ajusta el tamaño del logo */
     height: auto;
     margin-right: 10px; /* Espacio entre el logo y el texto */
-    border-radius: 15% 0 10% 5%;
+    border-radius: 25% 0 10% 15%;
   }
   
   .nav a {
