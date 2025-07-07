@@ -567,4 +567,105 @@ h2{
         font-size: 18px;
         line-height: 1.6;
     }
+
+    /* Estilos generales para la sección de destinos de invierno */
+.destinos-invierno {
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+    color: #333;
+}
+
+.destinos-invierno h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    color: #0056b3; /* Color similar al logo o al tema de Vuelos Latinos */
+}
+
+/* Estilos para la galería de destinos (contenedor de las tarjetas) */
+.galeria-destinos {
+    display: flex; /* Para que las tarjetas se organicen en fila */
+    flex-wrap: wrap; /* Para que las tarjetas salten de línea si no caben */
+    justify-content: center; /* Centrar las tarjetas horizontalmente */
+    gap: 30px; /* Espacio entre las tarjetas */
+    max-width: 1200px; /* Ancho máximo de la galería */
+    margin: 0 auto; /* Centrar la galería en la página */
+}
+
+/* Estilos para cada tarjeta de destino */
+.destino-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden; /* Para que la imagen no se salga del borde redondeado */
+    width: 300px; /* Ancho fijo para cada tarjeta */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transición suave al pasar el mouse */
+    display: flex; /* Para organizar contenido interno */
+    flex-direction: column; /* Contenido apilado verticalmente */
+    justify-content: space-between; /* Distribuye espacio entre elementos */
+}
+
+.destino-card:hover {
+    transform: translateY(-10px); /* Efecto al pasar el mouse */
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+.destino-card img {
+    width: 100%;
+    height: 200px; /* Altura fija para las imágenes */
+    object-fit: cover; /* Para que las imágenes cubran el espacio sin distorsionarse */
+    border-bottom: 1px solid #eee;
+}
+
+.destino-card h3 {
+    font-size: 1.6em;
+    margin: 15px 15px 10px;
+    color: #0056b3;
+}
+
+.destino-card p {
+    font-size: 1.05em;
+    padding: 0 15px 20px;
+    line-height: 1.6;
+    color: #555;
+}
+
+/* Media Queries para hacer el diseño responsivo en pantallas más pequeñas */
+@media (max-width: 768px) {
+    .galeria-destinos {
+        flex-direction: column; /* Apilar las tarjetas en pantallas pequeñas */
+        align-items: center; /* Centrar las tarjetas apiladas */
+    }
+
+    .destino-card {
+        width: 90%; /* Las tarjetas ocupan más ancho en móviles */
+        max-width: 350px; /* Ancho máximo para no ser demasiado grandes */
+    }
+
+    .destinos-invierno h2 {
+        font-size: 2em;
+    }
+}
+
+@media (max-width: 480px) {
+    .destinos-invierno {
+        padding: 20px 10px;
+    }
+    .destinos-invierno h2 {
+        font-size: 1.8em;
+    }
+}
     
+    .VacacionesInvierno {
+        text-align: center;
+        padding: 50px 20px;
+        background-color: #f8f9fa;
+    }
+
+    .invierno-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 20px;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
